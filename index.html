@@ -41,11 +41,11 @@
       crossorigin="anonymous"
     ></script>
 
-    <header>
+    <header class="jq-bordo fixed-top">
       <nav class="navbar fixed-top py-3">
         <div class="container-fluid">
           <!-- SINSTRA -->
-          <div class="col-2 col-md-1 col-lg-1">
+          <div class="col-2 col-md-1 col-lg-2 col-xxl-1">
             <!-- Logo Small-->
             <img
               src="img/mobile-logo.png"
@@ -63,7 +63,7 @@
             />
           </div>
           <!-- CENTRO -->
-          <div class="col-8 col-md-10 col-lg-10">
+          <div class="col-8 col-md-10 col-lg-8 col-xxl-10">
             <!-- Search -->
             <div class="input-group">
               <span class="input-group-text border-end-0 bg-body-secondary">
@@ -84,7 +84,7 @@
           </div>
           <!-- DESTRA -->
           <div
-            class="col-2 col-md-1 col-lg-1 d-flex align-items-center justify-content-around"
+            class="col-2 col-md-1 col-lg-2 col-xxl-1 d-flex align-items-center justify-content-around"
           >
             <i class="fa-solid fa-list-ul d-none d-lg-block"></i>
             <i class="fa-solid fa-circle-question d-none d-lg-block"></i>
@@ -171,5 +171,32 @@
         </div>
       </nav>
     </header>
+
+    <!-- MAIN -->
+    <main>
+      <div class="row">
+        <!-- SIDEBAR -->
+        <div id="sidebar" class="col-1 jq-bordo">
+          <div class="container d-flex flex-column flex-grow-1 jq-bordo">
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-chart-simple"></i>
+            <i class="fa-solid fa-signal"></i>
+          </div>
+          <div class="container jq-bordo">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+        </div>
+
+        <!-- JUMBO -->
+        <div id="jumbo" class="col-11">
+          <div class="row">
+            <div class="col-12">ciao</div>
+            <div class="col-12"></div>
+            <div class="col-12"></div>
+          </div>
+        </div>
+      </div>
+      <!-- /Fine Row ^ -->
+    </main>
   </body>
 </html>
