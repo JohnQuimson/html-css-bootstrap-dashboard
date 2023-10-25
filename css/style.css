@@ -35,9 +35,12 @@ nav {
   color: white;
   background-image: url(/img/sidebar-bg.png);
   background-color: #051e34;
+  height: calc(100vh - 100px);
+  margin-top: 100px;
 }
 
 #jumbo {
   background-color: #1b72e8;
-  height: 100vh;
+  height: calc(100vh - 100px);
+  margin-top: 100px;
 }
