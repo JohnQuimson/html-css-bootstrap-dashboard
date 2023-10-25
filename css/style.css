@@ -13,3 +13,12 @@ Components
 -------------------
 */
 @import './components/';
+
+/* 
+-------------------
+HEADER
+-------------------
+*/
+header .fa-bell {
+  color: var(--bell);
+}
