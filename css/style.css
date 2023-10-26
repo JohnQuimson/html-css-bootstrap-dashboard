@@ -19,32 +19,61 @@ Components
 HEADER
 -------------------
 */
-header .fa-bell {
-  color: var(--bell);
-}
 
 header {
-  height: 100px;
+  height: 4.375rem;
 }
 
-nav {
-  background-color: #fff;
+header .jq-logo-small {
+  height: 3.125rem;
+  width: 3.125rem;
 }
 
-#sidebar {
-  color: white;
+/* 
+-------------------
+MAIN
+-------------------
+*/
+main {
+  height: calc(100vh - 70px);
+  background-color: purple;
+}
+
+.search span,
+.search input {
+  background-color: var(--bg-search);
+  border: var(--bg-search);
+}
+
+/* 
+-------------------
+SIDEBAR
+-------------------
+*/
+
+.jq-sidebar {
   background-image: url(/img/sidebar-bg.png);
   background-color: #051e34;
-  height: calc(100vh - 100px);
-  margin-top: 100px;
 }
 
-#sidebar i span {
-  font-size: 10px;
+.jq-sidebar a {
+  text-decoration: none;
 }
 
-#jumbo {
-  background-color: #1b72e8;
+/* 
+-------------------
+CONTENT
+-------------------
+*/
 
-  margin-top: 100px;
+/* 
+-------------------
+MEDIA QUERY
+-------------------
+*/
+
+@media screen and (min-width: 992px) {
+  .jq-sidebar {
+    width: 150px;
+  }
 }

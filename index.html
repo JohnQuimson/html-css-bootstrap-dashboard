@@ -41,307 +41,107 @@
       crossorigin="anonymous"
     ></script>
 
-    <header class="jq-bordo fixed-top">
-      <nav class="navbar fixed-top py-3">
-        <div class="container-fluid">
-          <!-- SINSTRA -->
-          <div class="col-2 col-md-1 col-lg-2 col-xxl-1">
-            <!-- Logo Small-->
-            <img
-              src="img/mobile-logo.png"
-              alt="Logo"
-              width="50px"
-              height="50px"
-              class="align-text-top d-lg-none"
-            />
-
-            <!-- Logo Big -->
-            <img
-              src="img/logo.svg"
-              alt="Logo"
-              class="align-text-top d-none d-lg-block"
-            />
+    <header class="d-flex align-items-center">
+      <div class="container-fluid">
+        <div class="row bg-white align-items-center">
+          <!-- Logo -->
+          <div class="col-auto">
+            <div>
+              <img
+                src="img/mobile-logo.png"
+                alt="mobile-logo"
+                class="jq-logo-small d-lg-none"
+              />
+              <img
+                src="img/logo.svg"
+                alt="logo-big"
+                class="d-none d-lg-block"
+              />
+            </div>
           </div>
-          <!-- CENTRO -->
-          <div class="col-8 col-md-10 col-lg-8 col-xxl-10">
-            <!-- Search -->
-            <div class="input-group">
-              <span class="input-group-text border-end-0 bg-body-secondary">
+          <!-- Search -->
+          <div class="col">
+            <div class="search input-group">
+              <span class="input-group-text px-2" id="basic-addon1">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </span>
-              <div class="form-floating">
-                <input
-                  type="text"
-                  class="form-control bg-body-secondary border-start-0"
-                  id="floatingInputGroup1"
-                  placeholder="Username"
-                />
-                <label for="floatingInputGroup1"
-                  >Prova a cercare: Lezioni di Laravel</label
-                >
-              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Prova a cercare: Lezioni di Laravel"
+                aria-label="Username"
+              />
             </div>
           </div>
-          <!-- DESTRA -->
-          <div
-            class="col-2 col-md-1 col-lg-2 col-xxl-1 d-flex align-items-center justify-content-around"
-          >
-            <i class="fa-solid fa-list-ul d-none d-lg-block"></i>
-            <i class="fa-solid fa-circle-question d-none d-lg-block"></i>
-            <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
-            <button
-              class="navbar-toggler border-0"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
-            >
-              <i class="fa-solid fa-bell"></i>
-            </button>
-
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                  Offcanvas
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <hr class="dropdown-divider" />
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex mt-3" role="search">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-outline-success" type="submit">
-                    Search
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <!-- /Fine DESTRA ^ -->
-        </div>
-      </nav>
-    </header>
-
-    <!-- MAIN -->
-    <main>
-      <div class="row">
-        <!-- SIDEBAR -->
-        <div id="sidebar" class="col-2 d-flex flex-column py-4">
-          <div
-            class="container d-flex flex-column flex-grow-1 align-items-center gap-3"
-          >
-            <i class="fa-solid fa-house fs-5 d-flex align-items-center gap-3">
-              <span class="d-none d-lg-block">Home</span>
-            </i>
-            <i
-              class="fa-solid fa-chart-simple fs-5 d-flex align-items-center gap-3"
-            >
-              <span class="d-none d-lg-block">Stats</span>
-            </i>
-            <i class="fa-solid fa-signal fs-5 d-flex align-items-center gap-3">
-              <span class="d-none d-lg-block">Signals</span>
-            </i>
-          </div>
-          <div class="container d-flex flex-column align-items-center">
-            <i class="fa-solid fa-gear fs-5 d-flex align-items-center gap-3">
-              <span class="d-none d-lg-block">Admin</span>
-            </i>
-          </div>
-        </div>
-
-        <!-- CONTENT -->
-        <div id="content" class="col-10">
-          <!-- JUMBO -->
-          <div id="jumbo" class="row">
-            <div class="col-12">nuovo studente</div>
-            <div class="col-12">Boolean</div>
-            <div class="col-12">Studenti online</div>
-          </div>
-
-          <div class="row">
-            <div class="col-12 col-md-12 col-lg-8">
-              <!-- CLASSI -->
-              <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- FAQ -->
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong>
-                      It is shown by default, until the collapse plugin adds the
-                      appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong>
-                      It is hidden by default, until the collapse plugin adds
-                      the appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      Accordion Item #3
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong>
-                      It is hidden by default, until the collapse plugin adds
-                      the appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-12 col-lg-4"></div>
+          <!-- Menu -->
+          <div class="col-auto d-flex align-items-center">
+            <ul class="d-flex list-unstyled gap-3 mb-0">
+              <!-- icona lista -->
+              <li class="d-none d-lg-block">
+                <a href="#">
+                  <i class="fa-solid fa-list-ul text-black"></i>
+                </a>
+              </li>
+              <!-- icona domande -->
+              <li class="d-none d-lg-block">
+                <a href="#">
+                  <i class="fa-solid fa-circle-question text-black"></i>
+                </a>
+              </li>
+              <!-- icona menù -->
+              <li class="d-none d-lg-block">
+                <a href="#">
+                  <i class="fa-solid fa-ellipsis-vertical text-black"></i>
+                </a>
+              </li>
+              <!-- icona CAMPANELLA -->
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-bell colore-bell"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <!-- /Fine Row MAIN^ -->
+    </header>
+
+    <!-- MAIN -->
+    <main class="d-flex">
+      <!-- SIDEBAR -->
+      <div class="jq-sidebar flex-shrink-0 jq-bordo">
+        <ul class="d-flex flex-column p-4 list-unstyled gap-2 h-100">
+          <!-- Home -->
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-house text-white"></i>
+              <span class="d-none d-lg-inline ms-2 text-white">Home</span>
+            </a>
+          </li>
+          <!-- Stats -->
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-chart-simple text-white"></i>
+              <span class="d-none d-lg-inline ms-2 text-white">Stats</span>
+            </a>
+          </li>
+          <!-- Signal -->
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-signal text-white"></i>
+              <span class="d-none d-lg-inline ms-2 text-white">Signals</span>
+            </a>
+          </li>
+          <!-- Settings -->
+          <li class="mt-auto">
+            <a href="#">
+              <i class="fa-solid fa-gear text-white"></i>
+              <span class="d-none d-lg-inline ms-2 text-white">Admin</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content flex-grow-1 jq-bordo">dx</div>
     </main>
   </body>
 </html>

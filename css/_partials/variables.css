@@ -1,4 +1,12 @@
 :root {
-  --bell: #ff8f00;
-  --bg-jumbo: #1b72e8;
+  --bg-body: #f8f9fa;
+  --bg-search: #e5e5e5;
+}
+
+body {
+  background-color: var(--bg-body);
+}
+
+.colore-bell {
+  color: #ff8f00;
 }
