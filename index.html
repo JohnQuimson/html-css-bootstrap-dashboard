@@ -240,7 +240,7 @@
               <!-- Classi -->
               <div class="card mb-4">
                 <div class="card-header">
-                  <span class="fs-3 fw-semibold">Prossime classi</span>
+                  <span class="fs-4 fw-semibold">Prossime classi</span>
                 </div>
                 <div class="px-3">
                   <table class="jq-sez-classi table ">
@@ -404,9 +404,9 @@
               </div>
               
                <!-- FAQ -->
-              <div class="card mb-4">
+              <div class="card jq-faq mb-4">
                 <div class="card-header">
-                  <span class="fs-3 fw-semibold">F.A.Q.</span>
+                  <span class="fs-4 fw-semibold">F.A.Q.</span>
                 </div>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
@@ -419,7 +419,7 @@
                       aria-expanded="false"
                       aria-controls="flush-collapseOne"
                     >
-                      <span>Come aggiungere un nuovo studente ?</span>
+                      <span class="fw-semibold">Come aggiungere un nuovo studente ?</span>
                     </button>
                   </h2>
                   <div
@@ -444,7 +444,7 @@
                       aria-expanded="false"
                       aria-controls="flush-collapseTwo"
                     >
-                     <span> Come posso accedere alle informazioni del mio account ?</span>
+                     <span class="fw-semibold"> Come posso accedere alle informazioni del mio account ?</span>
                     </button>
                   </h2>
                   <div
@@ -470,7 +470,7 @@
                       aria-expanded="false"
                       aria-controls="flush-collapseThree"
                     >
-                      <span>Posso usare questa dashboard da mobile ?</span>
+                      <span class="fw-semibold">Posso usare questa dashboard da mobile ?</span>
                     </button>
                   </h2>
                   <div
@@ -497,15 +497,41 @@
             <!-- Col DX -->
             <div class="col-12 col-lg-4">
               <!-- To Do -->
-              <div class="card" style="width: 18rem;">
+              <div class="card">
                 <div class="card-header">
-                  <span class="fs-3 fw-semibold">To Do</span>
+                  <span class="fs-4 fw-semibold">To Do</span>
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
+                <div class="card m-2">
+                  <ul class="list-group list-group-flush">
+                    <!-- CheckBox 1 -->
+                    <li class="list-group-item ">
+                      <div class="form-check d-flex align-items-center gap-2">
+                        <input class="form-check-input align-middle" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label fw-semibold align-middle" for="flexCheckDefault">
+                          Kickoff nuove classi
+                        </label>
+                      </div>
+                    </li>
+                    <!-- CheckBox 2 -->
+                    <li class="list-group-item ">
+                      <div class="form-check d-flex align-items-center gap-2">
+                        <input class="form-check-input align-middle" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label fw-semibold align-middle" for="flexCheckDefault">
+                          lezione su Bootstrap 5 in classe #110
+                        </label>
+                      </div>
+                    </li>
+                    <!-- CheckBox 3 -->
+                    <li class="list-group-item ">
+                      <div class="form-check d-flex align-items-center gap-2">
+                        <input class="form-check-input align-middle" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label fw-semibold align-middle" for="flexCheckDefault">
+                          Controllare username github studenti
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

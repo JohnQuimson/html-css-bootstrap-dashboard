@@ -76,7 +76,8 @@ CONTENT
   width: 30px;
 }
 
-.card {
+.card,
+.accordion span {
   font-size: 12px;
 }
 
