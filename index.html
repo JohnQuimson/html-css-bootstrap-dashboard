@@ -75,7 +75,7 @@
           </div>
           <!-- Menu -->
           <div class="col-auto d-flex align-items-center">
-            <ul class="d-flex list-unstyled gap-3 mb-0">
+            <ul class="d-flex list-unstyled gap-3 align-items-center mb-0">
               <!-- icona lista -->
               <li class="d-none d-lg-block">
                 <a href="#">
@@ -96,9 +96,23 @@
               </li>
               <!-- icona CAMPANELLA -->
               <li>
-                <a href="#">
-                  <i class="fa-solid fa-bell colore-bell"></i>
-                </a>
+                <div class="dropdown">
+                  <a
+                    class="btn"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-bell colore-bell"></i>
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                </div>
               </li>
             </ul>
           </div>
@@ -109,7 +123,7 @@
     <!-- MAIN -->
     <main class="d-flex">
       <!-- SIDEBAR -->
-      <div class="jq-sidebar flex-shrink-0 jq-bordo">
+      <div class="jq-sidebar flex-shrink-0">
         <ul class="d-flex flex-column p-4 list-unstyled gap-2 h-100">
           <!-- Home -->
           <li>
@@ -141,7 +155,83 @@
           </li>
         </ul>
       </div>
-      <div class="content flex-grow-1 jq-bordo">dx</div>
+
+      <!-- Content MAIN -->
+      <div class="content flex-grow-1">
+        <!-- Jumbo -->
+        <div class="jumbo text-white">
+          <div class="row m-0">
+            <!-- Nuovo Studente -->
+            <div class="col-12 col-md-4 col-lg-3 jq-bordo order-md-last">
+              <div class="new">
+                <span>Nuovo Studente</span>
+
+                <!-- Offcanvas -->
+                <!-- bottone -->
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                >
+                  <i class="fa-regular fa-square-plus fs-1"></i>
+                </button>
+
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                      Offcanvas right
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">...</div>
+                </div>
+                <!-- Fine Offcanvas -->
+
+                <a href="#"><i class="fa-regular fa-square-plus"></i></a>
+              </div>
+            </div>
+
+            <!-- Boolean -->
+            <div class="col-12 col-md-4 col-lg-6 jq-bordo">
+              <div class="d-flex align-items-center gap-2">
+                <span class="fs-2">Boolean</span>
+                <div class="jq-bottone-jumbo">Piano Blaze</div>
+              </div>
+              <div class="d-flex align-items-center gap-1">
+                <div class="jq-bottone-jumbo">3 App</div>
+                <span class="fs-2">»</span>
+                <div class="jq-bottone-jumbo d-none d-lg-block">
+                  Boolean mobile app
+                </div>
+                <div class="jq-bottone-jumbo d-none d-lg-block">
+                  Boolean web app
+                </div>
+                <div class="jq-bottone-jumbo d-none d-lg-block">
+                  Boolean blog app
+                </div>
+                <div class="jq-bottone-jumbo d-lg-none">+</div>
+              </div>
+            </div>
+            <!-- Online -->
+            <div class="col-12 col-md-4 col-lg-3 jq-bordo">
+              <p class="mb-0">Studenti online negli ultimi 30 minuti</p>
+              <span class="fs-2">125</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>

@@ -5,3 +5,10 @@
 .jq-bordo {
   border: 1px solid black;
 }
+
+.jq-bottone-jumbo {
+  padding: 0 10px;
+  background-color: #165bba;
+  border-radius: 10px;
+  font-size: 12px;
+}
