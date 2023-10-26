@@ -81,11 +81,27 @@ CONTENT
   font-size: 12px;
 }
 
+.offcanvas label {
+  font-weight: 600;
+}
+
 /* 
 -------------------
 MEDIA QUERY
 -------------------
 */
+
+@media screen and (max-width: 768px) {
+  .offcanvas {
+    --bs-offcanvas-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .offcanvas {
+    --bs-offcanvas-width: 50%;
+  }
+}
 
 @media screen and (min-width: 992px) {
   .jq-sidebar {
