@@ -10,3 +10,7 @@ body {
 .colore-bell {
   color: #ff8f00;
 }
+
+table thead tr {
+  background-color: yellow;
+}

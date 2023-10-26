@@ -36,7 +36,6 @@ MAIN
 */
 main {
   height: calc(100vh - 70px);
-  background-color: purple;
 }
 
 .search span,
@@ -69,6 +68,16 @@ CONTENT
 /* Jumbo */
 .jumbo {
   background-color: #1b72e8;
+}
+
+/* content */
+.jq-sez-classi img {
+  height: 30px;
+  width: 30px;
+}
+
+.card {
+  font-size: 12px;
 }
 
 /* 
