@@ -87,6 +87,15 @@ CONTENT
 
 /* 
 -------------------
+HOVERS
+-------------------
+*/
+.jq-sidebar ul li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* 
+-------------------
 MEDIA QUERY
 -------------------
 */
