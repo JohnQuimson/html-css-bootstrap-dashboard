@@ -117,6 +117,12 @@ MEDIA QUERY
 }
 
 @media screen and (max-width: 992px) {
+  .jq-sidebar {
+    padding: 0 20px;
+  }
+  .jq-sidebar {
+    padding: 0 20px;
+  }
   .jq-sidebar ul {
     align-items: center;
   }
