@@ -106,6 +106,12 @@ MEDIA QUERY
   }
 }
 
+@media screen and (max-width: 992px) {
+  .jq-sidebar ul {
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .offcanvas {
     --bs-offcanvas-width: 50%;
@@ -115,5 +121,10 @@ MEDIA QUERY
 @media screen and (min-width: 992px) {
   .jq-sidebar {
     width: 150px;
+  }
+
+  .jq-sidebar ul {
+    margin-left: 30px;
+    margin-right: 20px;
   }
 }
