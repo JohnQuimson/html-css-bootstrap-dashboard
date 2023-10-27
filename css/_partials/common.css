@@ -13,6 +13,13 @@
   font-size: 12px;
   white-space: nowrap;
   vertical-align: middle;
+  z-index: 1;
+}
+
+.jq-bottone-jumbo a {
+  color: white;
+  z-index: 2;
+  text-decoration: none;
 }
 
 .jq-stato-classi {
