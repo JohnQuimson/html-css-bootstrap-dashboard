@@ -70,6 +70,15 @@ CONTENT
   background-color: #1b72e8;
 }
 
+.jumbo .jq-button-offcanvas {
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
 /* content */
 .jq-sez-classi img {
   height: 30px;
